@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Libre+Franklin:wght@300&family=Montserrat:wght@300;400&family=Zen+Maru+Gothic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./assets/JS/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <img src="https://fiorello.qodeinteractive.com/wp-content/themes/fiorello/assets/img/logo.png"
+                alt="Firello logo">
+        </div>
+        <div class="hamburger-bars"><i class="fa-solid fa-bars " onclick="openNav()"></i></div>
+        <div class="sidebar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+                <a href="#">HOME</a> <i class="fa-solid fa-caret-right arrow side"></i><br>
+                <a href="#">PAGES</a><i class="fa-solid fa-caret-right arrow side"></i><br>
+                <a href="#">SHOP</a><i class="fa-solid fa-caret-right arrow side"></i><br>
+                <a href="#">PORTFOLIO</a><i class="fa-solid fa-caret-right arrow side"></i><br>
+                <a href="#">BLOG</a><i class="fa-solid fa-caret-rightt arrow side"></i><br>
+                <a href="#">ELEMENTS</a><i class="fa-solid fa-caret-right arrow side"></i>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="home">
+
+                <p class="underline">HOME</p>
+                <div class="dropdown home-dropdown">
+                    <ul class="menu">
+                        <li class="menu-item"> Main Home</li><br>
+                        <li class="menu-item">Grid Home</li><br>
+                        <li class="menu-item">Flower Shop</li><br>
+                        <li class="menu-item">Animated Slider</li><br>
+                        <li class="menu-item">Metro Showcase</li><br>
+                        <li class="menu-item">Carousel Showcase</li><br>
+                        <li class="menu-item">Landing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pages">
+                <p class="underline">PAGES</p>
+                <div class="dropdown page-dropdown">
+                    <ul>
+                        <li class="menu-item">About Us</li><br>
+                        <li class="menu-item">FAQ Page</li><br>
+                        <li class="menu-item">Contact Us</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="shop">
+                <p class="underline">SHOP</p>
+                <div class="shop-dropdown">
+                    <div class="shop-dropdown-item">
+                        <p class="shop-dropdown-title">Product Types</p>
+                        <div class="shop-categories">
+                            <p> Standart Product</p>
+                            <p>Group Product</p>
+                            <p>Variable Product</p>
+                            <p>Virtual Product</p>
+                            <p>External Product</p>
+                            <p> Downloadable Product</p>
+                            <p>On Sale Product</p>
+                            <p>Out of stock Product</p>
+                            <p> New Product</p>
+                        </div>
+                    </div>
+                    <div class="shop-dropdown-item ">
+                        <p class="shop-dropdown-title">Shop Pages</p>
+                        <div class="shop-categories">
+                            <p> My Account</p>
+                            <p>Cart</p>
+                            <p>Checkout</p>
+                            <p>Orders</p>
+                            <p> Downloads</p>
+                            <p> Downloads</p>
+                            <p>Checkout</p>
+                            <p>Orders</p>
+                            <p> Downloads</p>
+                        </div>
+                    </div>
+                    <div class="shop-dropdown-item">
+                        <p class="shop-dropdown-title"> Shop Types</p>
+                        <div class="shop-categories">
+                            <p> Standart Product</p>
+                            <p>Group Product</p>
+                            <p>Variable Product</p>
+                            <p>Virtual Product</p>
+                            <p>External Product</p>
+                            <p> Downloadable Product</p>
+                            <p>On Sale Product</p>
+                            <p>Out of stock Product</p>
+                            <p> New Product</p>
+                        </div>
+                    </div>
+                    <div class="shop-dropdown-item">
+                        <p class="shop-dropdown-title">Shop Layouts
+                        </p>
+                        <div class="shop-categories">
+                            <p> Standart Product</p>
+                            <p>Group Product</p>
+                            <p>Variable Product</p>
+                            <p>Virtual Product</p>
+                            <p>External Product</p>
+                            <p> Downloadable Product</p>
+                            <p>On Sale Product</p>
+                            <p>Out of stock Product</p>
+                            <p> New Product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio">
+                <p class="underline">PORTFOLIO</p>
+                <div class="dropdown">
+                    <ul>
+                        <li class="menu-item">Standart</li><br>
+                        <li class="menu-item">Galery</li><br>
+                        <li class="menu-item">Masonry</li><br>
+                        <li class="arrow-text">Portfolio Layout <i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Two columns</p>
+                                <p>Three columns</p>
+                                <p>Four Columns</p>
+                                <p>Four Columns Wide</p>
+                                <p>Ffifth Columns Wide</p>
+                            </div>
+                        </li><br>
+                        <li class=" portfolio-single">Portfolio single <i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Small image</p>
+                                <p>Small slider</p>
+                                <p>Big image</p>
+                                <p>Big slider</p>
+                                <p>Galerry</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blog">
+                <p class="underline">BLOG</p>
+                <div class="dropdown blog-dropdown">
+                    <ul>
+                        <li>Mansory</li>
+                        <li>Standart</li>
+                        <li class="arrow-text">Post Types<i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Standart</p>
+                                <p>Galerry</p>
+                                <p>Link</p>
+                                <p>Quote</p>
+                                <p>Audio</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="elements">
+                <p class="underline">ELEMENTS</p>
+                <div class="dropdown elements-dropdown">
+                    <ul>
+                        <li class="arrow-text">Classic<i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>According</p>
+                                <p>Tab</p>
+                                <p>Button</p>
+                                <p>Video Button</p>
+                                <p>Audio button</p>
+                            </div>
+                        </li>
+                        <li class="arrow-text">Infographic<i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Blog list</p>
+                                <p>Google Map</p>
+                                <p>Link</p>
+                                <p>Quote</p>
+                                <p>Audio</p>
+                            </div>
+                        </li>
+                        <li class="arrow-text">Interactive<i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Image Gallery</p>
+                                <p>Team</p>
+                                <p>Banner</p>
+                                <p>Shop list</p>
+
+                            </div>
+                        </li>
+                        <li class="arrow-text">Typographic<i class="fa-solid fa-caret-right arrow"></i>
+                            <div class="dropdown-inner" style=" margin-top:-40px;">
+                                <p>Heading</p>
+                                <p>Section</p>
+                                <p>Title</p>
+                                <p>Higlights</p>
+                                <p>DropCaps</p>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+                <i class="fa-solid fa-bag-shopping bag"></i>
+                <p><a href="www">CART($0)</a></p>
+
+            </div>
+    </header>
+    <!-- header end -->
+    <main>
+
+        <!-- slide section start with tulips -->
+        <section id="slide-section">
+            <div class="slide-section">
+                <div class="content">
+                    <div class="content-title">
+                        <span>Send</span>
+                        <span class="flower">flowers</span>
+                        <span>like you mean it.</span>
+                    </div>
+
+                    <div class="content-text">
+                        <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our
+                            flowers
+                            will make it special cursus a sit amet mauris.
+                        </p>
+                    </div>
+                    <div class="content-sara">
+                        <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h2-sign-img.png"
+                            alt="sara">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slide section end with tulips -->
+
+        <!--Filter section started-->
+        <section id="filter">
+            <div class="our-flowers">
+                <div class="buttons">
+                    <div id="myBtnContainer" class="myFilterButtons">
+                        <span class="btn active all" onclick="filterSelection('all')">ALL</span>
+                        <span class="btn" onclick="filterSelection('cactuses')">CACTUSES</span>
+                        <span class="btn" onclick="filterSelection('exotic')">EXOTIC</span>
+                        <span class="btn" onclick="filterSelection('greens')">GREEN
+                        </span>
+                        <span class="btn" onclick="filterSelection('popular')">POPULAR</span>
+                        <span class="btn" onclick="filterSelection('various')">VARIOUS</span>
+                        <span class="btn" onclick="filterSelection('winter')">WINTER</span>
+                    </div>
+                    <div class="filter-buton" style="margin-left: 250px;">
+                        <P>FILTER</P>
+                        <i class="fa-solid fa-caret-down arrow down"></i>
+                        <div class="inner-filter-button">
+                            <ul>
+                                <li>ALL</li>
+                                <li>CACTUSES</li>
+                                <li>EXOTIC</li>
+                                <li>GREENS</li>
+                                <li>POPULAR</li>
+                                <li>VARIOUS</li>
+                                <li>WINTER</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-buton-parent">
+                    <div class="category-buton" id="category-button" style=" margin-left: 200px; margin-top: -30px;">
+                        <P>CATEGORIES</P>
+                        <i class="fa-solid fa-caret-down arrow down"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="our-flowers-photos ">
+                <div class="our-flowers-photos-item filterDiv cactuses box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">FOLXFOGE FLIGGER</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+                <div class="our-flowers-photos-item filterDiv cactuses box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">SWEET ALYSOM</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+                <div class="our-flowers-photos-item filterDiv exotic box">
+
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg"
+                        alt="flower photos">
+                    <p class="name-of-flower">SPRING SNOWLAKE</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+                <div class="our-flowers-photos-item filterDiv popular box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">SCARLET SAGE</p>
+                    <p class="price-of-flower">189$</p><br>
+                </div>
+                <div class="our-flowers-photos-item filterDiv greens box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">ROACK SOAPWORD</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+                <div class="our-flowers-photos-item filterDiv various box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">SUMMARY SAVORGE</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+                <div class="our-flowers-photos-item filterDiv winter box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">WILD ROSES</p>
+                    <p class="price-of-flower">289$</p>
+
+                </div>
+                <div class="our-flowers-photos-item filterDiv cactuses box">
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg"
+                        alt="flower photo">
+                    <p class="name-of-flower">SPRING SNOWLAKE</p>
+                    <p class="price-of-flower">289$</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Filter section ended-->
+
+
+        <!--Video section Startet-->
+        <section id="video">
+
+            <div class="valentine-suprise">
+                <div class="video">
+                    <video width="620" height="340" controls class="love-video"
+                        poster="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-video-img.jpg">
+                        <source
+                            src="https://www.youtube.com/watch?time_continue=1&amp;v=K-0cjGCNYfs&amp;_ga=2.264622159.199483548.1653124147-396755180.1653124147"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <div class="valentine-text">
+                    <div class="valentine-text-item">
+                        <span>Surprise Your</span>
+                        <span class="valentine">Valentine!</span>
+                        <span>Let us arrange a smile.</span>
+                    </div>
+                    <div class="valentine-text-item">
+                        <p>Where flowers are our inspiration to create
+                            lasting memories. Whatever the occasion...</p>
+                    </div>
+                    <div class="valentine-text-item">
+                        <ul>
+                            <li class="valentine-text-item-li"><i class="fa-solid fa-heart"></i> Hand picked just for
+                                you.</li>
+                            <li class="valentine-text-item-li"><i class="fa-solid fa-heart"></i>Unique flower
+                                arrangements</li>
+                            <li class="valentine-text-item-li"><i class="fa-solid fa-heart"></i>Best way to say you
+                                care.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Video section Ended-->
+
+        <!--Flower Experts section Started-->
+
+        <section id="flower-experts">
+            <div class="flower-experts-title">
+                <p class="Experts-title">Flower Experts</p>
+                <p class="Experts-content">
+                    Flower Experts
+                    A perfect blend of creativity, energy,
+                    communication, happiness and love.
+                    Let us arrange a smile for
+                    you.
+                </p>
+            </div>
+            <div class="flower-experts-photos">
+
+                <div>
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-1.png"
+                        alt="expert photo">
+                    <p class="expert-name">CRYSTAL BROOKS</p>
+                    <p class="expert-job">Florist</p>
+                </div>
+                <div>
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-team-img-2.png"
+                        alt="expert photo">
+                    <p class="expert-name">SHIRLEY HARRIS</p>
+                    <p class="expert-job">Manager</p>
+                </div>
+                <div>
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-3.png"
+                        alt="expert photo">
+                    <p class="expert-name">BEVERLY CLARK</p>
+                    <p class="expert-job">Florist</p>
+                </div>
+                <div>
+                    <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h3-team-img-4.png"
+                        alt="expert photo">
+                    <p class="expert-name">AMANDA WATKINS</p>
+                    <p class="expert-job">Florist</p>
+                </div>
+            </div>
+        </section>
+        <!--Flower Experts section Ended-->
+
+        <!--Subscribe us section Start-->
+        <section id="subscribe-us">
+            <div class="photo-girls">
+                <div>
+                    <div class="gmail" style="visibility: hidden">
+                        <p>Join The Colorful Bunch!</p>
+                        <input type="text" placeholder="Email Adress">
+                        <button class="subscribe">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="gmail">
+                        <p>Join The Colorful Bunch!</p>
+                        <input type="text" placeholder="Email Adress">
+                        <button class="subscribe">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Subscribe us section ended-->
+
+        <!--From-our-Blog section started-->
+        <section id="From-our-Blog">
+            <div class="our-blog-text">
+
+            </div>
+            <div></div>
+        </section>
+        <!--From-our-Blog section end-->
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

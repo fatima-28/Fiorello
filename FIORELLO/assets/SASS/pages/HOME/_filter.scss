@@ -1,0 +1,191 @@
+
+.myFilterButtons{
+ margin-top: 50px;
+ margin-left: 150px;
+span{
+    cursor: pointer;
+}
+}
+.our-flowers-photos{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 90px;
+    margin-right: 50px;
+    width: 990px;
+}
+.our-flowers-photos-item{
+    
+    img{
+        height:300px;
+        width:100%;
+        
+    }
+    p{
+        text-align:center;
+        
+    }
+ 
+}
+.our-flowers{
+    width: 1290px;
+}
+.name-of-flower{
+    margin-top:5px
+}
+.price-of-flower{
+    color: grey;
+}
+.our-flowers-photos-item{
+   
+    &:hover{
+        img{
+            transform: scale(0.9);
+            cursor: pointer;
+        }
+    }
+}
+.our-flowers-photos-item{
+    img{
+        transition: 1s;
+    }
+}
+.btn{
+    transition: 1s;
+    &:hover{
+        color: rgb(167, 0, 0);
+    }
+}
+.category-buton{
+    display:flex;
+    margin-top: 60px;
+    margin-left: 379px;
+    cursor: pointer;
+  
+}
+.category-buton-parent{
+    display:none;
+}
+
+.buttons{
+    display: flex;
+}
+.filter-buton{
+    display:flex;
+    margin-top: 60px;
+    margin-left: 379px;
+    cursor: pointer;
+      &:hover{
+                .inner-filter-button{
+                    display:none;
+                }
+            }
+  
+}
+.down{
+    margin-left:5px;
+    margin-top: 5px;
+}
+.our-flowers{
+    margin-left: -60px;
+}
+
+
+@media only screen and (min-width:1120px) and (max-width:1290px){
+    .our-flowers-photos{
+        position:relative;
+  left:-100px;
+        width:900px;
+        
+    }
+    .filter-buton{
+        position:relative;
+        left:-270px;
+       
+     }
+     .myFilterButtons{
+        position:relative;
+        left:-100px;
+     }
+   
+    }
+    @media only screen and (min-width:900px) and (max-width:1120px){
+       
+        .our-flowers-photos{
+            position:relative;
+      left:-120px;
+            width:840px;
+            
+        }
+        .filter-buton{
+            position:relative;
+            left:-200px;
+           
+         }
+         .myFilterButtons{
+            position:relative;
+            left:-120px;
+         }
+       
+        }
+    
+        @media only screen and (min-width:700px) and (max-width:900px){
+            
+            .our-flowers-photos{
+                position:relative;
+          left:-10px;
+          width:500px;
+                
+            }
+            .filter-buton{
+                position:relative;
+                left:-300px;
+               
+             }
+             .myFilterButtons{
+                position:relative;
+                left:-140px;
+             }
+             
+        
+    }
+    @media only screen and (min-width:500px) and (max-width:700px){
+       
+        .our-flowers-photos{
+            position:relative;
+      left:70px;
+      width:300px;
+      img{
+         height: 400px; 
+      }
+            
+        }
+        .filter-buton{
+            position:relative;
+            left:240px;
+            top: 10px;
+          
+           
+         }
+         .myFilterButtons{
+           display:none;
+         }
+       
+         .category-buton-parent{
+            display:block
+        }
+    }
+    .inner-filter-button{
+        margin-left: 30px;
+        display:none;
+    }
+
+
+    
+    
+
+
+
+

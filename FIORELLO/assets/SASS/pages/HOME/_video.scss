@@ -1,0 +1,57 @@
+.valentine-suprise{
+    display: flex;
+    justify-content: space-around;
+}
+#video{
+    margin-top: 100px;
+    background-color:rgb(249, 245, 245)
+}
+.video{
+    margin-top: 100px;
+    margin-left: -130px;
+    margin-bottom: 200px;
+}
+
+.valentine{
+    color: red
+}
+.valentine-text{
+    margin-top: 20px;
+    width:350px;
+    margin-left: -200px;
+    font-size:50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.valentine-text-item{
+    margin-top: 30px;
+p{
+    font-size:20px;
+}
+}
+.valentine-text-item-li{
+    font-size:20px;
+    margin-bottom: 10px;
+    i{
+        color: red;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:1100px){
+
+    .valentine-suprise{
+        display: block;
+      
+    }
+    .video{
+        margin-left: 70px;
+    }
+    .valentine-text{
+        margin-top: -150px;
+        margin-left:100px;
+    }
+    .love-video{
+        width: 900px;
+        height: 500px;
+    }
+}

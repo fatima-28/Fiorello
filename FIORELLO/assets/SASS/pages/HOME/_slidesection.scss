@@ -1,0 +1,57 @@
+
+.content{
+    margin-left:50px;
+    margin-top: 150px;
+}
+.content-title{
+    width: 390px;
+   
+    
+    span{
+        font-size:50px;
+    }
+}
+.flower{
+    color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+.content-text{
+    margin-top:20px;
+    width: 350px;
+    p{
+        font-size:18px;
+    }
+}
+.content-sara{
+    img{
+        margin-top: 30px;
+    }
+}
+
+
+.slide-section{
+    margin-top: -100px;
+    background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 480px;
+    animation: change 17s infinite ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes change{
+    0%{
+        background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+    }
+    30%{
+        background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/pink-tulips-bouquet-isolated-on-white-background-from-above-top-jelena-jovanovic.jpg);
+    }
+    70%{
+        background-image: url(https://www.eflorist.co.uk/Upload/tulips_20.jpg);
+    }
+    100%{
+        background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+    }
+}

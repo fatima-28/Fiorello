@@ -1,0 +1,1128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo img {
+  width: 220px;
+  margin-left: 80px;
+  margin-top: 60px;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.categories div {
+  margin-right: 50px;
+  margin-top: 60px;
+}
+
+.categories div i {
+  margin-left: 20px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bag {
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.glass {
+  margin-top: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  margin-bottom: 7px;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0px;
+  top: -19px;
+  width: 170px;
+  display: none;
+  background-color: white;
+}
+
+.home {
+  position: relative;
+}
+
+.home:hover .dropdown {
+  display: inline;
+  height: 250px;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  cursor: pointer;
+}
+
+.underline:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 30%;
+  position: absolute;
+  background: black;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+.underline:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  cursor: pointer;
+}
+
+.menu-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 30%;
+  position: absolute;
+  background: black;
+  -webkit-transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.pages {
+  position: relative;
+}
+
+.pages:hover .dropdown {
+  display: block;
+  height: 250px;
+}
+
+.portfolio {
+  position: relative;
+}
+
+.portfolio:hover .dropdown {
+  display: block;
+  height: 250px;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 250px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 250px;
+  }
+}
+
+.dropdown {
+  -webkit-animation: fade 1s ease;
+          animation: fade 1s ease;
+  z-index: 2;
+}
+
+.dropdown-inner {
+  display: none;
+  position: relative;
+  margin-top: -20px;
+  margin-left: 160px;
+  background-color: white;
+  width: 200px;
+  max-height: 230px;
+  z-index: 3;
+}
+
+.portfolio-single .dropdown-inner {
+  width: 150px;
+}
+
+@-webkit-keyframes inner-fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 240px;
+  }
+}
+
+@keyframes inner-fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 240px;
+  }
+}
+
+.dropdown-inner {
+  -webkit-animation: inner-fade 1s ease;
+          animation: inner-fade 1s ease;
+  z-index: 2;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+.arrow-text {
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow-text:hover .dropdown-inner {
+  display: block;
+  height: 350px;
+}
+
+.dropdown {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dropdown-inner {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolio-single {
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+}
+
+.home-dropdown {
+  height: 150px;
+}
+
+.portfolio-single {
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio-single:hover .dropdown-inner {
+  display: block;
+  height: 350px;
+}
+
+.shop-dropdown-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.shop-dropdown-item .shop-dropdown-title {
+  margin-top: -60px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.shop-dropdown {
+  display: none;
+  background-color: white;
+  width: 1250px;
+  position: relative;
+  left: -620px;
+  top: -10px;
+  height: 500px;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.shop-categories {
+  position: relative;
+  top: -50px;
+}
+
+.shop-categories p {
+  margin-bottom: 10px;
+}
+
+.shop-categories .shop-pages {
+  position: relative;
+  top: -100px;
+  background-color: white;
+}
+
+.shop {
+  position: relative;
+}
+
+.shop:hover .shop-dropdown {
+  display: block;
+  position: absolute;
+}
+
+.elements {
+  position: relative;
+}
+
+.elements:hover .elements-dropdown {
+  display: block;
+  position: absolute;
+}
+
+@-webkit-keyframes element-fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 135px;
+  }
+}
+
+@keyframes element-fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 135px;
+  }
+}
+
+.elements-dropdown {
+  -webkit-animation: element-fade 1s ease;
+          animation: element-fade 1s ease;
+  z-index: 2;
+}
+
+@-webkit-keyframes inner-fade-shop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 500px;
+  }
+}
+
+@keyframes inner-fade-shop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 500px;
+  }
+}
+
+.shop-dropdown {
+  -webkit-animation: inner-fade-shop 1s ease;
+          animation: inner-fade-shop 1s ease;
+  z-index: 2;
+}
+
+.blog {
+  position: relative;
+}
+
+.blog:hover .dropdown {
+  display: block;
+}
+
+@-webkit-keyframes fade-blog {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 107px;
+  }
+}
+
+@keyframes fade-blog {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateZ(10px);
+            transform: translateZ(10px);
+    height: 2px;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    height: 107px;
+  }
+}
+
+.blog-dropdown {
+  -webkit-animation: fade-blog 1s ease;
+          animation: fade-blog 1s ease;
+  z-index: 2;
+  max-height: 100px;
+}
+
+.glass:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.hamburger-bars {
+  display: none;
+  font-size: 18px;
+  margin-left: 250px;
+}
+
+.hamburger-bars:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar {
+  display: none;
+}
+
+.sidenav a:hover {
+  color: #ae0000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+@media only screen and (min-width: 1120px) and (max-width: 1200px) {
+  p {
+    font-size: 15px;
+  }
+  p .categories {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1120px) {
+  .categories {
+    display: none;
+  }
+  .hamburger-bars {
+    margin-top: 58px;
+    margin-left: 500px;
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .categories {
+    display: none;
+  }
+  .hamburger-bars {
+    margin-top: 58px;
+    margin-left: 350px;
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .categories {
+    display: none;
+  }
+  .hamburger-bars {
+    margin-top: 58px;
+    margin-left: 180px;
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .categories {
+    display: none;
+  }
+  .hamburger-bars {
+    margin-top: 58px;
+    margin-left: 80px;
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 300px) {
+  .categories {
+    display: none;
+  }
+  .hamburger-bars {
+    margin-top: 58px;
+    margin-left: 30px;
+    display: block;
+  }
+  .sidebar {
+    display: block;
+  }
+}
+
+.content {
+  margin-left: 50px;
+  margin-top: 150px;
+}
+
+.content-title {
+  width: 390px;
+}
+
+.content-title span {
+  font-size: 50px;
+}
+
+.flower {
+  color: red;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.content-text {
+  margin-top: 20px;
+  width: 350px;
+}
+
+.content-text p {
+  font-size: 18px;
+}
+
+.content-sara img {
+  margin-top: 30px;
+}
+
+.slide-section {
+  margin-top: -100px;
+  background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  -webkit-animation: change 17s infinite ease-in-out;
+          animation: change 17s infinite ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+  }
+  30% {
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/pink-tulips-bouquet-isolated-on-white-background-from-above-top-jelena-jovanovic.jpg);
+  }
+  70% {
+    background-image: url(https://www.eflorist.co.uk/Upload/tulips_20.jpg);
+  }
+  100% {
+    background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+  }
+}
+
+@keyframes change {
+  0% {
+    background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+  }
+  30% {
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/pink-tulips-bouquet-isolated-on-white-background-from-above-top-jelena-jovanovic.jpg);
+  }
+  70% {
+    background-image: url(https://www.eflorist.co.uk/Upload/tulips_20.jpg);
+  }
+  100% {
+    background-image: url(https://problog.ftdi.com/blog/wp-content/uploads/2012/10/tulip-care-guide-hero.jpg);
+  }
+}
+
+.myFilterButtons {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.myFilterButtons span {
+  cursor: pointer;
+}
+
+.our-flowers-photos {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 90px;
+  margin-right: 50px;
+  width: 990px;
+}
+
+.our-flowers-photos-item img {
+  height: 300px;
+  width: 100%;
+}
+
+.our-flowers-photos-item p {
+  text-align: center;
+}
+
+.our-flowers {
+  width: 1290px;
+}
+
+.name-of-flower {
+  margin-top: 5px;
+}
+
+.price-of-flower {
+  color: grey;
+}
+
+.our-flowers-photos-item:hover img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  cursor: pointer;
+}
+
+.our-flowers-photos-item img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn:hover {
+  color: #a70000;
+}
+
+.category-buton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  margin-left: 379px;
+  cursor: pointer;
+}
+
+.category-buton-parent {
+  display: none;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter-buton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  margin-left: 379px;
+  cursor: pointer;
+}
+
+.filter-buton:hover .inner-filter-button {
+  display: none;
+}
+
+.down {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.our-flowers {
+  margin-left: -60px;
+}
+
+@media only screen and (min-width: 1120px) and (max-width: 1290px) {
+  .our-flowers-photos {
+    position: relative;
+    left: -100px;
+    width: 900px;
+  }
+  .filter-buton {
+    position: relative;
+    left: -270px;
+  }
+  .myFilterButtons {
+    position: relative;
+    left: -100px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1120px) {
+  .our-flowers-photos {
+    position: relative;
+    left: -120px;
+    width: 840px;
+  }
+  .filter-buton {
+    position: relative;
+    left: -200px;
+  }
+  .myFilterButtons {
+    position: relative;
+    left: -120px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  .our-flowers-photos {
+    position: relative;
+    left: -10px;
+    width: 500px;
+  }
+  .filter-buton {
+    position: relative;
+    left: -300px;
+  }
+  .myFilterButtons {
+    position: relative;
+    left: -140px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .our-flowers-photos {
+    position: relative;
+    left: 70px;
+    width: 300px;
+  }
+  .our-flowers-photos img {
+    height: 400px;
+  }
+  .filter-buton {
+    position: relative;
+    left: 240px;
+    top: 10px;
+  }
+  .myFilterButtons {
+    display: none;
+  }
+  .category-buton-parent {
+    display: block;
+  }
+}
+
+.inner-filter-button {
+  margin-left: 30px;
+  display: none;
+}
+
+.valentine-suprise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#video {
+  margin-top: 100px;
+  background-color: #f9f5f5;
+}
+
+.video {
+  margin-top: 100px;
+  margin-left: -130px;
+  margin-bottom: 200px;
+}
+
+.valentine {
+  color: red;
+}
+
+.valentine-text {
+  margin-top: 20px;
+  width: 350px;
+  margin-left: -200px;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.valentine-text-item {
+  margin-top: 30px;
+}
+
+.valentine-text-item p {
+  font-size: 20px;
+}
+
+.valentine-text-item-li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.valentine-text-item-li i {
+  color: red;
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1100px) {
+  .valentine-suprise {
+    display: block;
+  }
+  .video {
+    margin-left: 70px;
+  }
+  .valentine-text {
+    margin-top: -150px;
+    margin-left: 100px;
+  }
+  .love-video {
+    width: 900px;
+    height: 500px;
+  }
+}
+
+.flower-experts-title {
+  margin-top: 70px;
+  text-align: center;
+  width: 500px;
+  margin-left: 450px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.flower-experts-title .Experts-title {
+  font-size: 50px;
+}
+
+.flower-experts-title .Experts-content {
+  font-size: 20px;
+}
+
+.flower-experts-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.expert-name {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.expert-job {
+  color: grey;
+  text-align: center;
+}
+
+@media only screen and (min-width: 608px) and (max-width: 1000px) {
+  .flower-experts-title {
+    position: relative;
+    left: -300px;
+  }
+}
+
+@media only screen and (min-width: 308px) and (max-width: 600px) {
+  .flower-experts-title {
+    position: relative;
+    left: -450px;
+  }
+  .flower-experts-photos {
+    margin-left: 100px;
+  }
+}
+
+.gmail {
+  margin-left: 100px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.gmail p {
+  font-size: 38px;
+  margin-top: 100px;
+  color: white;
+}
+
+.gmail input {
+  width: 500px;
+  height: 60px;
+  padding: 20px;
+  border: 1px solid transparent;
+}
+
+.gmail button {
+  height: 60px;
+  width: 200px;
+  margin-left: -5px;
+  border: 1px solid transparent;
+  background-color: #ff2f2f;
+  color: white;
+}
+
+.gmail button:hover {
+  background-color: red;
+}
+
+.photo-girls {
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .gmail p {
+    font-size: 28px;
+    margin-top: 100px;
+    color: white;
+  }
+  .gmail input {
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid transparent;
+  }
+  .gmail button {
+    height: 60px;
+    width: 150px;
+    margin-left: -5px;
+    border: 1px solid transparent;
+    background-color: #ff2f2f;
+    color: white;
+  }
+  .gmail button:hover {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .gmail p {
+    font-size: 25px;
+    margin-top: 100px;
+    color: white;
+  }
+  .gmail input {
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid transparent;
+  }
+  .gmail button {
+    height: 60px;
+    width: 120px;
+    margin-left: -5px;
+    border: 1px solid transparent;
+    background-color: #ff2f2f;
+    color: white;
+  }
+  .gmail button:hover {
+    background-color: red;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .gmail p {
+    font-size: 20px;
+    margin-top: 100px;
+    color: white;
+  }
+  .gmail input {
+    width: 200px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid transparent;
+  }
+  .gmail button {
+    height: 60px;
+    width: 90px;
+    margin-left: -5px;
+    border: 1px solid transparent;
+    background-color: #ff2f2f;
+    color: white;
+  }
+  .gmail button:hover {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=main.css.map */

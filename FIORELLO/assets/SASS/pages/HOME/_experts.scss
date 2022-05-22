@@ -1,0 +1,45 @@
+.flower-experts-title{
+    margin-top: 70px;
+    text-align: center;
+    width: 500px;
+    margin-left: 450px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    .Experts-title{
+        font-size:50px;
+    }
+    .Experts-content{
+        font-size:20px;
+    }
+}
+.flower-experts-photos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.expert-name{
+text-align: center;
+margin-top: 18px;;
+}
+.expert-job{
+    color: grey;
+text-align: center;
+}
+
+@media only screen and (min-width: 608px) and (max-width:1000px){
+    .flower-experts-title{
+      position: relative;
+      left: -300px;
+    }
+}
+
+@media only screen and (min-width: 308px) and (max-width:600px){
+    .flower-experts-title{
+      position: relative;
+      left: -450px;
+    }
+    .flower-experts-photos{
+        margin-left: 100px;
+    }
+}
